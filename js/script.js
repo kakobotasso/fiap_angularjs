@@ -16,3 +16,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     })
     .otherwise({redirectTo: '/'})
 }])
+.controller('Tratamentos', [function () {
+  var self = this;
+  self.listaTratamentos = tratamentos.all();
+}])

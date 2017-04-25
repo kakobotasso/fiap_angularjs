@@ -1,1 +1,14 @@
 <h1>Tratamentos</h1>
+
+<h2>Veja nossos tratamentos disponíveis</h2>
+
+<div ng-controller="Tratamentos as t">
+  <ul>
+    <li ng-repeat="tratamento in t.listaTratamentos">
+      <p>
+        Tratamento: <span>{{ tratamento["descricao"] }}</span><br/>
+        Duração: <span>{{ tratamento["duracao"] }}</span>
+      </p>
+    </li>
+  </ul>
+</div>
