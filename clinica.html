@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Consutório Angular</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body ng-app="appClinica">
+    <h1>Consultório Angular</h1>
+
+    <ul>
+      <li><a href="#/tratamentos">Tratamentos</a></li>
+      <li><a href="#/medicos">Medicos</a></li>
+      <li><a href="#/agenda">Agenda</a></li>
+    </ul>
+
+    <div class="borda" ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="js/tratamentos.js"></script>
+    <script src="js/medicos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
