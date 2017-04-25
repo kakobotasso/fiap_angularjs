@@ -29,3 +29,10 @@ app.config(['$routeProvider', function ($routeProvider) {
     alert('Erro reportado: ' + error);
   });
 }])
+.controller('Agenda', [function (){
+  var self = this;
+
+  self.submit = function () {
+    var agendamento = {}; // POPULA O AGENDAMENTO  
+  };
+}])
