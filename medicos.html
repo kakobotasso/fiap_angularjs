@@ -1,1 +1,15 @@
 <h1>Médicos</h1>
+
+<h2>Confira a nossa equipe médica</h2>
+
+<div ng-controller="Medicos as m">
+  <ul>
+    <li ng-repeat="medico in m.listaMedicos">
+      <p>
+        Médico: <span>{{ medico["nome"] }}</span><br/>
+        CRM: <span>{{ medico["crm"] }}</span><br/>
+        Especialidade: <span>{{ medico["especialidade"] }}</span>
+      </p>
+    </li>
+  </ul>
+</div>

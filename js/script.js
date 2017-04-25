@@ -20,3 +20,12 @@ app.config(['$routeProvider', function ($routeProvider) {
   var self = this;
   self.listaTratamentos = tratamentos.all();
 }])
+.controller('Medicos',  ['$http', function ($http) {
+  var self = this;
+  self.listaMedicos = [];
+  $http.get('raw/medicos.txt').then(function (response) {
+    self.listaMedicos = response.data;
+  }, function (error) {
+    alert('Erro reportado: ' + error);
+  });
+}])

@@ -1,0 +1,27 @@
+[
+  {
+    "crm": "123456789-x",
+    "nome": "John Doe",
+    "especialidade": "Cardiologista"
+  },
+  {
+    "crm": "159736482-0",
+    "nome": "Jared Silva",
+    "especialidade": "Pediatra"
+  },
+  {
+    "crm": "147852369-9",
+    "nome": "Ronyedson Ferreira",
+    "especialidade": "Oftalmologista"
+  },
+  {
+    "crm": "987423651-8",
+    "nome": "Miguel Kudo",
+    "especialidade": "Ortopedista"
+  },
+  {
+    "crm": "156324789-5",
+    "nome": "Luis Augusto Moreira",
+    "especialidade": "Neurocirurgião"
+  }
+]
