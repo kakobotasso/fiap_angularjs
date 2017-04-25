@@ -3,18 +3,37 @@
   <head>
     <title>Consutório Angular</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
 
   <body ng-app="appClinica">
-    <h1>Consultório Angular</h1>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#/" class="navbar-brand">Consultório Angular</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#/tratamentos">Tratamentos</a></li>
+            <li><a href="#/medicos">Medicos</a></li>
+            <li><a href="#/agenda">Agenda</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-    <ul>
-      <li><a href="#/tratamentos">Tratamentos</a></li>
-      <li><a href="#/medicos">Medicos</a></li>
-      <li><a href="#/agenda">Agenda</a></li>
-    </ul>
-
-    <div class="borda" ng-view></div>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="borda" ng-view></div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>

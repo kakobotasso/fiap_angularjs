@@ -1,13 +1,22 @@
 <h1>Agenda</h1>
 
+<h2>Agende o seu tratamento</h2>
+
 <div ng-controller="Agenda as a">
   <form ng-submit="a.submit()">
-    <input type="date" ng-model="a.data" ng-required="true" placeholder="Informe a data do seu agendamento"/>
+    <label>
+      Escolha uma data para o seu tratamento: <br/>
+      <input type="date" ng-model="a.data" ng-required="true" placeholder="Informe a data do seu agendamento"/>
+    </label>
     <br/><br/>
 
-    <input type="time" ng-model="a.hora" ng-required="true" placeholder="Informe a hora do seu agendamento"/>
+    <label>
+      Escolha o melhor horário para o seu tratamento: <br />
+      <input type="time" ng-model="a.hora" ng-required="true" placeholder="Informe a hora do seu agendamento"/>
+    </label>
     <br/><br/>
 
+    <label>Escolha o tipo de consulta:</label><br/>
     <label>
       <input type="radio" ng-model="a.tipo_consulta" ng-required="!a.tipo_consulta" value="convenio" /> Convênio
     </label>
@@ -33,7 +42,7 @@
     </select>
     <br/><br/>
 
-    <input type="submit" value="Agendar" />
+    <input type="submit" value="Agendar" class="btn btn-info"/>
   </form>
 
   <p>{{ a.retorno }}</p>
